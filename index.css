@@ -1,0 +1,112 @@
+*{
+    margin: 0px;
+}
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: url("./An\ informatioguide.png");
+    object-fit: cover;
+}
+
+.nav{
+    height: 50px;
+    width: 100vw;
+    background-color: black;
+    color: white;
+}
+.nav-container{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.nav-item:hover{
+    cursor: pointer;
+    transform: scale(1.2);
+    background-color: beige;
+    padding: 10px;
+    color: black;
+}
+.container-wrapper{
+    background-color: white;
+    height: 70%;
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+}
+
+.box-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 100px;
+    border: 1px solid black;
+}
+
+
+.box-item:hover:nth-child(1){
+    background-color: rgb(200, 163, 150);
+    cursor: pointer;
+}
+.box-item:hover:nth-child(2){
+    background-color: aqua;
+    cursor: pointer;
+}
+.box-item:hover:nth-child(3){
+    background-color: rebeccapurple;
+    cursor: pointer;
+}
+.box-item:hover:nth-child(4){
+    background-color: red;
+    cursor: pointer;
+}
+.box-item:hover:nth-child(5){
+    background-color: royalblue;
+    cursor: pointer;
+}
+.box-item:hover:nth-child(6){
+    background-color: rgb(63, 205, 141);
+    cursor: pointer;
+}
+.box-item:hover:nth-child(7){
+    background-color: rgb(216, 225, 85);
+    cursor: pointer;
+}
+.box-item:hover:nth-child(8){
+    background-color: rgb(207, 79, 145);
+    cursor: pointer;
+}
+.box-item:hover:nth-child(9){
+    background-color: rgb(61, 190, 215);
+    cursor: pointer;
+}
+
+.win{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 30px;
+    background-color: aqua;
+    margin: 20px;
+}
+
+
+@media screen and (max-width:480px) {
+    .container-wrapper{
+        height: 50%;
+        width: 85%;
+    }
+    
+}
